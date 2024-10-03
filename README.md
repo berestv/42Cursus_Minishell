@@ -2,13 +2,13 @@
 
 ## Overview
 
-**Minishell** is a simple, Unix-like shell developed as part of my studies at 42 Porto. This project demonstrates my understanding of system programming, process management, and the implementation of shell features. Achieving a final note of 100, this project highlights my proficiency in C programming and system-level programming concepts.
+**Minishell** is a simple, Unix-like shell developed as part of our studies at 42 Porto. This project demonstrates our understanding of system programming, process management, and the implementation of shell features. Achieving a near-perfect final note, this project highlights our proficiency in C programming and system-level programming concepts.
 
 ## Features
 
 - **Command Execution**: Supports the execution of executable programs, both from absolute paths and relative paths.
-- **Built-in Commands**: Implements essential built-in shell commands such as `cd`, `echo`, `env`, `setenv`, `unsetenv`, and `exit` made by us.
-- **Environment Variables**: Handles environment variables and allows for their manipulation using built-in commands.
+- **Built-in Commands**: Implements essential built-in shell commands such as `cd`, `echo`, `env`, `setenv`, `unsetenv`, and `exit` programmed entirely by us, which have to mimmick the exact behaviour of their original shell counterparts.
+- **Environment Variables**: Handles environment variables and allows their manipulation using the mentioned built-in commands.
 - **Pipes and Redirection**: Supports piping (`|`) and I/O redirection (`<`, `>`, `>>`).
 - **Signal Handling**: Manages common signals like `SIGINT` (Ctrl+C) and `SIGQUIT` (Ctrl+\).
 - **Error Handling**: Provides comprehensive error messages for invalid commands and syntax errors, always updating the exit status.
@@ -35,7 +35,7 @@ Start the shell by running:
   ./minishell
   ```
 
-33 Built-in Commands:
+Some Built-in Commands:
 
 - cd [directory]: Change the current directory.
 - echo [arguments]: Display a line of text.
@@ -61,5 +61,5 @@ This project was evaluated and received an almost perfect score, highlighting it
 - Special thanks to my peers who provided guidance and support throughout the development of this project.
 - And a special thanks to my colleague and project partner <a href="https://github.com/berestv" target="_blank">Bernardo</a>.
 
-## Attention
-The error that made us have 95 out of 100 is solved.
+## Notes
+The error that made us have 95/100 is solved. It was a small bug with the command "cd" due to some last-minute changes, which made Minishell unable to effectively update the prompt path.
